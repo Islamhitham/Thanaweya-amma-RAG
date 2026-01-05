@@ -27,9 +27,9 @@ This project ingests PDF textbooks (Arabic & English), processes them with a **s
 
 The system supports three distinct interaction modes, each with a specialized bilingual prompt:
 
-## 1. Q&A Mode (Ask)
-## 2. Quiz Mode (Generate Quiz)
-## 3. Explain Mode (Simplify)
+# 1. Q&A Mode (Ask)
+# 2. Quiz Mode (Generate Quiz)
+# 3. Explain Mode (Simplify)
 
 ### Local AI Engine
 *   **Privacy-First**: Runs entirely locally using **Ollama** and **ChromaDB**. No data leaves your machine.
@@ -38,28 +38,6 @@ The system supports three distinct interaction modes, each with a specialized bi
 ## Data Source
 The curriculum data used to build this system is sourced from the official **Egyptian Ministry of Education E-Library**:
  **[https://ellibrary.moe.gov.eg/books/](https://ellibrary.moe.gov.eg/books/)**
-
-##  Architecture
-
-```mermaid
-graph TD
-    A[PDF Textbooks] --> B{Smart Extractor}
-    B -->|Text Layer| C[Raw Text]
-    B -->|Image/Scan| D[Tesseract OCR]
-    D --> C
-    C --> E[Subject Cleaner]
-    E --> F[Structure-Aware Chunker]
-    F --> G[(ChromaDB Vector Store)]
-    F --> H[BM25 Index]
-    
-    I[User Query] --> J{Hybrid Retriever}
-    J -->|Semantic| G
-    J -->|Keyword| H
-    J --> K[RRF Fusion Ranking]
-    K --> L[Top Context]
-    L --> M[Ollama LLM]
-    M --> N[Answer]
-```
 
 ##  Installation
 
