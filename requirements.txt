@@ -1,0 +1,22 @@
+# Core RAG Dependencies
+chromadb==0.4.22
+ollama==0.1.6
+
+# Embeddings and NLP
+sentence-transformers==2.3.1
+rank-bm25==0.2.2
+
+# PDF Processing with OCR
+PyMuPDF==1.23.8
+pymupdf4llm==0.0.5
+pytesseract==0.3.10
+Pillow==10.1.0
+
+# Text Processing
+langchain-text-splitters==0.0.1
+tiktoken==0.5.2
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+colorama==0.4.6
