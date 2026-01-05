@@ -27,9 +27,9 @@ This project ingests PDF textbooks (Arabic & English), processes them with a **s
 
 The system supports three distinct interaction modes, each with a specialized bilingual prompt:
 
-# 1. Q&A Mode (Ask)
-# 2. Quiz Mode (Generate Quiz)
-# 3. Explain Mode (Simplify)
+### 1. Q&A Mode (Ask)
+### 2. Quiz Mode (Generate Quiz)
+### 3. Explain Mode (Simplify)
 
 ### Local AI Engine
 *   **Privacy-First**: Runs entirely locally using **Ollama** and **ChromaDB**. No data leaves your machine.
